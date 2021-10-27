@@ -542,7 +542,12 @@ int getProcCount(void){
       counter++;
     }
   }
-  cprintf("Succefully deployed!\n");
-  cprintf("%d \n", counter);
-  return 0;
+  cprintf("getProcCount System Call!\n");
+  return counter;
+}
+
+int getReadCount(void){
+
+  cprintf("getReadCount System Call!\n");
+  return readc;
 }

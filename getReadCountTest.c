@@ -3,7 +3,6 @@
 #include "user.h"
 
 int main(void){
-    getProcCount();
-    printf(1,"Test Finished \n");
+    printf(1,"Test 2 Finished, ReadCount: %d \n", getReadCount());
     exit();
 }

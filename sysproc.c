@@ -6,6 +6,7 @@
 #include "memlayout.h"
 #include "mmu.h"
 #include "proc.h"
+//extern int readc;
 
 int
 sys_fork(void)
@@ -92,5 +93,11 @@ sys_uptime(void)
 
 int sys_getProcCount(void){
   return getProcCount();
+
+}
+
+
+int sys_getReadCount(void){
+  return getReadCount();
 
 }
