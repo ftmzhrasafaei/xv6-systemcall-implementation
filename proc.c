@@ -532,3 +532,17 @@ procdump(void)
     cprintf("\n");
   }
 }
+
+int getProcCount(void){
+
+  struct proc *p;
+  int counter = 0;
+  for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+    if(p->state != UNUSED){
+      counter++;
+    }
+  }
+  cprintf("Succefully deployed!\n");
+  cprintf("%d \n", counter);
+  return 0;
+}
