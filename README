@@ -1,14 +1,4 @@
 
-# System Call implementation in XV6
-
-Here, I implemented two system calls in xv6 operating system.
-
-The files that I changed are commited as "2de version".
-- getProcCount syscall: it calculates and returns the number of the processes in the system
-- getReadCount syscall: it calculates and returns the number of times that the "sys_read" syscall is used. I used a variable named "read" to do so. You can use this syscall for other syscalls as well.
-
-
-## XV6 README
 NOTE: we have stopped maintaining the x86 version of xv6, and switched
 our efforts to the RISC-V version
 (https://github.com/mit-pdos/xv6-riscv.git)
